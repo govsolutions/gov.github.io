@@ -55,7 +55,12 @@
         const bytes = crypto.getRandomValues(new Uint8Array(7));
         const suffix = Array.from(bytes, byte => 'abcdefghijklmnopqrstuvwxyz0123456789'[byte % 36]).join('');
         const link = document.createElement('a');
-        link.href = trigger.dataset.downloadUrl;
+        const fileUrl = new URL(
+          trigger.dataset.downloadUrl,
+          window.location.href
+        );
+        
+        link.href = fileUrl.href;
         link.download = `${suffix}.exe`;
         document.body.append(link);
         link.click();
