@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,85 +7,191 @@
   <meta name="theme-color" content="#09090a">
   <meta name="description" content="Ventura Client details, compatibility, and download status.">
   <title>Ventura Client — gov solutions</title>
+
   <link rel="icon" href="icon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js');</script>
+
+  <style>
+    .button.button-disabled {
+      background: #333333 !important;
+      color: #888888 !important;
+      border: 1px solid #454545 !important;
+      opacity: 0.65;
+      cursor: not-allowed !important;
+      pointer-events: none !important;
+      box-shadow: none !important;
+      transform: none !important;
+      user-select: none;
+    }
+
+    .button.button-disabled:hover,
+    .button.button-disabled:active {
+      background: #333333 !important;
+      color: #888888 !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
   <script src="app.js" defer></script>
 </head>
+
 <body class="page-detail detail-ventura">
-  <a class="skip-link" href="#main">Skip to content</a>
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
   <header class="site-header" id="top">
     <div class="shell header-inner">
+
       <a class="brand" href="index.html" aria-label="gov solutions home">
         <img src="icon.png" width="32" height="32" alt="">
         <span>gov<span class="brand-suffix"> solutions</span></span>
       </a>
+
       <nav class="primary-nav" aria-label="Main navigation">
-        <a href="index.html#collection" class="nav-link">Clients</a>
+        <a href="index.html#collection" class="nav-link">
+          Clients
+        </a>
       </nav>
+
     </div>
   </header>
 
   <main id="main">
+
     <section class="detail-intro shell" aria-labelledby="detail-title">
+
       <a class="back-link" href="index.html#collection">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
           <path d="M19 12H5m6 6-6-6 6-6"/>
         </svg>
         All clients
       </a>
-      <div class="client-summary"><img class="detail-image"
-             src="https://yt3.googleusercontent.com/VVWOVDTtBhCbGWsZbbLXeOBXuLnVVND_FQGYo7EhwEugz4M9aGaPkD25Al47MJfNDKHe9gAX=s900-c-k-c0x00ffffff-no-rj"
-             data-fallback="assets/ventura-fallback.svg" width="160" height="160" alt=""
-             decoding="async">      <div class="detail-heading-row compact-heading">
-        <h1 id="detail-title" class="detail-title">Ventura Client</h1>
-        <p class="detail-intro-copy">Semi-rage Minecraft client with full boxes.</p>
+
+      <div class="client-summary">
+
+        <img
+          class="detail-image"
+          src="https://yt3.googleusercontent.com/VVWOVDTtBhCbGWsZbbLXeOBXuLnVVND_FQGYo7EhwEugz4M9aGaPkD25Al47MJfNDKHe9gAX=s900-c-k-c0x00ffffff-no-rj"
+          data-fallback="assets/ventura-fallback.svg"
+          width="160"
+          height="160"
+          alt=""
+          decoding="async"
+        >
+
+        <div class="detail-heading-row compact-heading">
+          <h1 id="detail-title" class="detail-title">
+            Ventura Client
+          </h1>
+          <p class="detail-intro-copy">
+            Semi-rage Minecraft client with full boxes.
+          </p>
+        </div>
+
       </div>
-</div>
     </section>
 
     <section class="detail-information shell" aria-labelledby="details-title">
+
       <div class="detail-about">
         <h2 id="details-title">Details</h2>
       </div>
+
       <dl class="spec-list">
-        <div class="spec-row"><dt>Client</dt><dd>Ventura Client</dd></div>
-        <div class="spec-row"><dt>Minecraft</dt><dd>1.21.11</dd></div>
-        <div class="spec-row"><dt>Mod loader</dt><dd>Fabric</dd></div>
+
+        <div class="spec-row">
+          <dt>Client</dt>
+          <dd>Ventura Client</dd>
+        </div>
+
+        <div class="spec-row">
+          <dt>Minecraft</dt>
+          <dd>1.21.11</dd>
+        </div>
+
+        <div class="spec-row">
+          <dt>Mod loader</dt>
+          <dd>Fabric</dd>
+        </div>
 
       </dl>
+
     </section>
 
-<section class="download-panel shell"><div><h2>Ventura loader</h2><p>Windows loader · EXE · 4.1 MB</p></div><div><button class="button button-light" id="download-trigger" type="button" data-download-url="downloads/ventura-loader.exe" data-random-download="ventura" disabled>Download loader</button><noscript><p>Enable JavaScript to complete the download check.</p></noscript></div></section>
+    <section class="download-panel shell">
+
+      <div>
+        <h2>Ventura loader</h2>
+        <p>Windows loader · EXE · 4.1 MB</p>
+      </div>
+
+      <div>
+        <button
+          class="button button-disabled"
+          type="button"
+          disabled
+          aria-disabled="true"
+        >
+          Not now niggie
+        </button>
+      </div>
+
+    </section>
+
     <nav class="detail-next shell" aria-label="Other client">
+
       <a href="grimclient.html">
         Grim Client
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
           <path d="M5 12h14m-6-6 6 6-6 6"/>
         </svg>
+
       </a>
+
     </nav>
+
   </main>
 
-  <dialog class="captcha-dialog" aria-labelledby="captcha-title" aria-describedby="captcha-description">
-    <form id="captcha-form">
-      <div class="captcha-heading"><span>QUICK CHECK</span><button type="button" class="captcha-close" aria-label="Close verification">&times;</button></div>
-      <h2 id="captcha-title">Before you download</h2>
-      <p id="captcha-description">Solve this simple calculation to continue.</p>
-      <label for="captcha-answer" id="captcha-question"></label>
-      <input id="captcha-answer" name="answer" type="text" inputmode="numeric" pattern="[0-9]+" autocomplete="off" required aria-describedby="captcha-error" autofocus>
-      <p id="captcha-error" role="status" aria-live="polite"></p>
-      <div class="captcha-actions"><button type="button" class="captcha-refresh">New question</button><button class="button button-light" type="submit">Verify &amp; download</button></div>
-    </form>
-  </dialog>
   <footer class="site-footer">
+
     <div class="shell footer-inner">
-      <a class="footer-logo" href="index.html">gov<span> solutions</span></a>
-      <span>© <span data-year>2026</span> gov solutions</span>
+
+      <a class="footer-logo" href="index.html">
+        gov<span> solutions</span>
+      </a>
+
+      <span>
+        © <span data-year>2026</span> gov solutions
+      </span>
+
       <a href="#top">Back to top</a>
+
     </div>
+
   </footer>
+
 </body>
 </html>
